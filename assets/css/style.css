@@ -1,0 +1,233 @@
+/* Amvice || Building Cultures, Building Partnership
+
+    Technology Are Used,
+
+    Bootstrap 5,
+    Fontawesome 6,
+    Google Fonts,
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+ul, ol {
+    list-style: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'El Messiri', sans-serif;
+}
+p, span {
+    font-family: 'Poppins', sans-serif;
+}
+a, a:hover {
+    color: #000;
+    text-decoration: none;
+}
+img {
+    vertical-align: middle;
+}
+:root {
+    --primary: #1F396D;
+    --secondary: #B3504F;
+    --third: #95C458;
+}
+/* COMMON CSS END */
+
+
+/* Navigation Part Start */
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: var(--primary);
+    border-bottom: 3px solid var(--primary);
+}
+.navbar-brand img {
+    width: 120px;
+}
+/* Navigation Part End */
+
+/* Welcome Part Start */
+.welcome_part {
+    overflow-x: hidden;
+}
+.welcome_con h3,
+.service_head h4{
+    font-size: 22px;
+}
+.welcome_con h2,
+.service_head h2{
+    font-size: 40px;
+    color: var(--primary);
+    font-weight: 700;
+}
+.welcome_con a,
+.service_head a{
+    color: var(--primary);
+} 
+/* Welcome Part End */
+
+/* Service Part Start */
+.service_con {
+    position: relative;
+    z-index: 1;
+    transition: .3s ease;
+}
+.service_con:hover {
+    background-image: url('./../img/welcome_img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    /* z-index: -2; */
+    color: #fff;
+}
+.service_con:hover .icon {
+    background: rgba(255,255,255,0.4);
+}
+.service_con h4 {
+    padding-top: 15px;
+}
+.service_con .icon {
+    font-size: 26px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.service_con .icon i {
+    color: var(--secondary);
+}
+
+.service_con:hover::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: rgba(179, 80, 79, .4);
+    z-index: -1;
+    transition: .3s ease;
+}
+
+/* Service Part End */
+
+/* Product Part STart */
+.product_part {
+    background: url(../img/product_img_bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.product_overlay {
+    background: rgba(255,255,255,0.9);
+}
+.product_con_main > .row {
+    row-gap: 24px;
+}
+/* Product Part End */
+
+/* Branch Part Start */
+.branch_area {
+    padding: 120px 0;
+    background: url('../img/more_info.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.branch_con {
+    padding: 15px;
+    background: #fff;
+    height: 250px;
+    overflow: scroll;
+    box-shadow: 0 0 10px -8px black;
+}
+.branch_con ul li,
+.contact_con ul li {
+    position: relative;
+    transition: 0.3s ease;
+}
+.branch_con ul li:hover a,
+.contact_con ul li:hover a {
+    color: var(--secondary);
+}
+.branch_con ul li::before,
+.contact_con ul li:before {
+    position: absolute;
+    top: 0;
+    left: -20px;
+    content: '>';
+    color: var(--secondary);
+}
+/* Branch Part End */
+
+/* Contact Part Start */
+.contact_part {
+    padding: 80px 0;
+    background: #303030;
+}
+.contact_con ul li a {
+    color: #fff;
+}
+/* Contact Part End */
+
+/* Footer Part Start */
+.footer_part {
+    padding: 20px 0;
+    background: var(--secondary);
+}
+.footer_con p {
+    padding: 0;
+    margin: 0;
+}
+.footer_con p a {
+    color: var(--third);
+}
+/* Footer Part End */
+
+/* --------------------------------- Index Page End -------------------------------------- */
+
+
+
+/* --------------------------------- About Page Start -------------------------------------- */
+.breadcrumb_part {
+    padding: 30px 0 90px;
+    background: var(--primary);
+    z-index: -1;
+}
+.breadcrumb_head h1 {
+    color: #fff;
+    font-size: 80px;
+}
+.about_part {
+    padding: 60px 0;
+}
+.about_con_indicator_wrapper {
+    padding: 25px 20px;
+    box-sizing: border-box;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 15px;
+    margin-top: -100px;
+    z-index: 1;
+    background: #fff;
+
+}
+.about_con_indicator_wrapper ul li button {
+    background: transparent;
+    border: none;
+    transition: .3s ease;
+}
+.about_con_indicator_wrapper ul li button:hover {
+    color: var(--secondary);
+    padding-left: 15px;
+    position: relative;
+}
+.about_con_indicator_wrapper ul li button:hover::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '>';
+}
+/* --------------------------------- About Page End -------------------------------------- */
