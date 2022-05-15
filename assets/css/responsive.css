@@ -1,0 +1,44 @@
+@media (max-width:991.98px) {
+    .menus {
+        display: none !important;
+    }
+    .collapse:not(.show) {
+        display: block;
+    }
+    .navigation {
+        padding: 15px 0;
+    }
+}
+@media (max-width:767.98px) {
+    .service_con .icon {
+        margin: auto;
+    }
+    .contact_con ul li:before {
+    position: absolute;
+    top: 0;
+    left: -20px;
+    content: '';
+    }
+    .service_con_navs_con {
+        height: 200px;
+    }
+    /* .about_con_value_part.ser_page .ser:nth-last-child(1) .service_con_navs_con,
+    .about_con_value_part.ser_page .ser:nth-last-child(2) .service_con_navs_con {
+        border: none ;
+    } */
+    .service_con_navs_con {
+        border: none;
+    }
+    .about_con_value_part.ser_page .ser:nth-child(even) .service_con_navs_con {
+        border: none;
+    }
+}
+@media (max-width:575.98px) {
+
+    .breadcrumb_part {
+        padding: 30px 0;
+    }
+    .breadcrumb_head h1 {
+        font-size: 40px;
+    }
+}

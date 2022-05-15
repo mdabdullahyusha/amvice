@@ -19,35 +19,70 @@
         <!-- Header Part Start -->
         <header class="header_part">
             <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-light">
-                    <a class="navbar-brand" href="./index.html">
+                <nav class="navigation d-flex justify-content-between align-items-center">
+                    <div class="logo">
                         <img src="./assets/img/logo.png" alt="">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">About Us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Service</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Partners</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Clients</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contact Us</a>
-                            </li>
-                        </ul>
                     </div>
+                    <ul class="menus d-flex text-center">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Service <i class="fa-solid fa-caret-down"></i></a>
+                            <div class="dropdown d-flex justify-content-center">
+                                <div class="dropdown_item">
+                                    <div class="dropdown_item_head">
+                                        <h3>Hello Dropdown</h3>
+                                    </div>
+                                    <hr>
+                                    <ul>
+                                        <li><a href="#">Dropdown 1</a></li>
+                                        <li><a href="#">Dropdown 2</a></li>
+                                        <li><a href="#">Dropdown 3</a></li>
+                                        <li><a href="#">Dropdown 4</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown_item">
+                                    <div class="dropdown_item_head">
+                                        <h3>Hello Dropdown</h3>
+                                    </div>
+                                    <hr>
+                                    <ul>
+                                        <li><a href="#">Dropdown 1</a></li>
+                                        <li><a href="#">Dropdown 2</a></li>
+                                        <li><a href="#">Dropdown 3</a></li>
+                                        <li><a href="#">Dropdown 4</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Career</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                    <button class="collapse" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                        <div class="offcanvas-header">
+                          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menus</h5>
+                          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                          <div>
+                            AMVICE established by the skilled workforce and experienced leadership.
+                          </div>
+                          <ul class="collapse_menu pt-5">
+                              <li><a class="my-1" href="#">Home <span class="plus"><i class="fa-solid fa-plus"></i></span></a></li>
+                              <li><a class="my-1" href="./about.html">About Us <span class="plus"><i class="fa-solid fa-plus"></i></span></a></li>
+                              <li><a class="my-1" href="#">Service <span class="plus"><i class="fa-solid fa-plus"></i></span></a></li>
+                              <li><a class="my-1" href="#">Products <span class="plus"><i class="fa-solid fa-plus"></i></span></a></li>
+                              <li><a class="my-1" href="#">Gallery <span class="plus"><i class="fa-solid fa-plus"></i></span></a></li>
+                              <li><a class="my-1" href="#">Career <span class="plus"><i class="fa-solid fa-plus"></i></span></a></li>
+                              <li><a class="my-1" href="#">Contact Us <span class="plus"><i class="fa-solid fa-plus"></i></span></a></li>
+                          </ul>
+                        </div>
+                      </div>
                 </nav>
             </div>
         </header>
@@ -105,13 +140,13 @@
                 </div>
                 <div class="welcome_con_main">
                     <div class="row d-flex align-items-center">
-                        <div class="col-md-5">
+                        <div class="col-lg-5 col-md-6 d-md-block d-none">
                             <div class="welcome_con_img">
                                 <img src="./assets/img/welcome_img.jpg" class="img-fluid w-100" alt="">
                             </div>
                         </div>
-                        <div class="col-md-5 offset-md-1">
-                            <div class="welcome_con">
+                        <div class="col-lg-5 col-md-6 offset-lg-1">
+                            <div class="welcome_con text-md-start text-center">
                                 <h3>Welcome To</h3>
                                 <h2>AMVICE</h2>
                                 <p>AMVICE began its business operation as a registered company in the year of 2017, established by the skilled workforce and experienced leadership. We serve customers and client on wide array of services regardless the industry sector. Our capabilities have been developed through the immense experiences as solutions provider in past decades, and efficient strategic planning in time. Our all services are focused on the issues most important to our customers and clients.
@@ -135,15 +170,15 @@
                 </div>
                 <div class="service_con_main">
                     <div class="row d-flex justify-content-center pt-3">
-                        <div class="col-md-4">
-                            <div class="service_con bg-white p-3">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service_con bg-white p-3 text-md-start text-center">
                                 <div class="icon"><i class="fa-solid fa-shop"></i></div>
                                 <h4>Supply Chain Management</h4>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt atque laudantium veritatis fugiat veniam</p>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="service_con bg-white p-3">
+                        <div class="col-lg-4 col-md-6 mt-md-0 mt-4">
+                            <div class="service_con bg-white p-3 text-md-start text-center">
                                 <div class="icon"><i class="fa-solid fa-shop"></i></div>
                                 <h4>Supply Chain Management</h4>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt atque laudantium veritatis fugiat veniam</p>
@@ -236,7 +271,7 @@
                 <div class="branch_area_con_main">
                     <div class="row">
                         <div class="col-md-3">
-                            <div class="branch_con">
+                            <div class="branch_con p-md-0 p-5">
                                 <h4>Region</h4>
                                 <ul>
                                     <li><a href="#">Worldwide</a></li>
@@ -247,7 +282,7 @@
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="branch_con">
+                            <div class="branch_con p-md-0 p-5 mt-md-0 mt-4">
                                 <h4>Country</h4>
                                 <ul>
                                     <li><a href="#">All</a></li>
@@ -276,7 +311,7 @@
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="branch_con">
+                            <div class="branch_con p-md-0 p-5 mt-md-0 mt-4">
                                 <h4>Business Summary</h4>
                                 <p>Please select a country to view business summary</p>
                                 <ul>
@@ -287,7 +322,7 @@
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="branch_con">
+                            <div class="branch_con p-md-0 p-5 mt-md-0 mt-4">
                                 <h4>Contact Us</h4>
                                 <p>Please select a country to view Contact information</p>
                                 <ul>
@@ -306,9 +341,9 @@
         <section class="contact_part">
             <div class="container">
                 <div class="contact_con_main">
-                    <div class="row">
-                        <div class="col-lg-2 text-white">
-                            <div class="contact_con_head pb-3">
+                    <div class="row text-md-start text-center">
+                        <div class="col-lg-2 col-md-4 text-white">
+                            <div class="contact_con_head pb-lg-3 pb-1 pt-md-0 pt-5">
                                 <h4>ABOUT US</h4>
                             </div>
                             <div class="contact_con">
@@ -318,8 +353,8 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-2 text-white">
-                            <div class="contact_con_head pb-3">
+                        <div class="col-lg-2 col-md-4 text-white">
+                            <div class="contact_con_head pb-lg-3 pb-1 pt-md-0 pt-5">
                                 <h4>SERVICE</h4>
                             </div>
                             <div class="contact_con">
@@ -329,8 +364,8 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-3 text-white">
-                            <div class="contact_con_head pb-3">
+                        <div class="col-lg-3  col-md-4 text-white">
+                            <div class="contact_con_head pb-lg-3 pb-1 pt-md-0 pt-5">
                                 <h4>PRODUCTS</h4>
                             </div>
                             <div class="contact_con">
@@ -346,8 +381,8 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-3 text-white">
-                            <div class="contact_con_head pb-3">
+                        <div class="col-lg-3 col-md-4 mx-lg-0 mx-auto pt-lg-0 pt-md-5 text-white">
+                            <div class="contact_con_head pb-lg-3 pb-1 pt-md-0 pt-5">
                                 <h4>Gallery</h4>
                             </div>
                             <div class="contact_con">
@@ -357,7 +392,7 @@
                                     <li><a href="#">Events & Tradeshows</a></li>
                                 </ul>
                             </div>
-                            <div class="contact_con_head pb-1">
+                            <div class="contact_con_head pb-lg-1 pb-1 pt-md-4 pt-5">
                                 <h4>Career</h4>
                             </div>
                             <div class="contact_con">
@@ -367,8 +402,8 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-2 text-white">
-                            <div class="contact_con_head pb-3">
+                        <div class="col-lg-2 col-md-4 mx-lg-0 mx-auto pt-lg-0 pt-md-5 text-white">
+                            <div class="contact_con_head pb-lg-3 pb-1 pt-md-0 pt-5">
                                 <h4>Contact Us</h4>
                             </div>
                             <div class="contact_con">
@@ -403,11 +438,5 @@
     <script src="./assets/js/jquery-3.6.0.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
     <script src="./assets/js/app.js"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    -->
   </body>
 </html>
