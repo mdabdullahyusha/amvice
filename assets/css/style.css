@@ -32,11 +32,28 @@ img {
     vertical-align: middle;
 }
 :root {
-    --primary: #1F396D;
+    --primary: #956813;
     --secondary: #B3504F;
     --third: #95C458;
 }
 /* COMMON CSS END */
+
+/* Back To Top Start */
+.back_to_top {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 1;
+    display: none;
+}
+.back_to_top button {
+    background: var(--primary);
+    outline: 0;
+}
+.back_to_top button:hover {
+    background-color: var(--primary);
+}
+/* Back To Top End */
 
 
 /* Navigation Part Start */
@@ -221,6 +238,9 @@ img {
 .product_con_main > .row {
     row-gap: 24px;
 }
+.product_con_main .service_con {
+    min-height: 335px;
+}
 /* Product Part End */
 
 /* Branch Part Start */
@@ -230,8 +250,9 @@ img {
     background-size: cover;
     background-position: center;
 }
+
 .branch_con {
-    padding: 15px;
+    padding: 15px 35px;
     background: #fff;
     height: 250px;
     overflow: scroll;
@@ -253,6 +274,9 @@ img {
     left: -20px;
     content: '>';
     color: var(--secondary);
+}
+.contact_con p {
+    text-align: justify;
 }
 /* Branch Part End */
 
